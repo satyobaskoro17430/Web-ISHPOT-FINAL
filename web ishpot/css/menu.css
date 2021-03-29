@@ -1,0 +1,109 @@
+.menu{
+    position: relative;
+    z-index: -2;
+    background-color: #000;
+    overflow: hidden;}
+.menu h1{
+    text-align: center;
+    font-size: 30px;
+    padding: 50px 0;
+    color: orange;}
+.menu .top{
+    top: 0;
+    left: -300px;
+}
+.menu .top{
+    width: 600px;
+    height: 600px;
+    border-radius: 100%;
+    position: absolute;
+    z-index: -1;}
+.menu .mid1, .menu .mid2, .menu .mid3{
+    width: 0;
+}
+.menu h2{
+    color: #fff;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-sizing: border-box;}
+.menu .container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    position: relative;
+    max-width: 1000px;
+    box-sizing: border-box;
+    justify-content: space-between;}
+.menu p{
+    color: #fff;
+    padding: 5px 0;
+    font-size: 21px;}
+.menu .item{
+    width: 43%;
+    margin-bottom: 80px;
+    opacity: 90%;}
+.menu .boxes{
+     display: flex;
+     padding: 0 40px;}
+.menu .text{
+    flex: 2.9;}
+.menu .price{
+    text-align: right;
+    flex: 1;}
+@media(max-width: 810px){
+    .menu .top{
+        width: 500px;
+        height: 500px;
+        right: -250px;}
+    .menu h2{
+        font-size: 18px;}
+    .menu p{
+        font-size: 14px;}
+}
+@media(max-width: 615px){
+    .menu .item{
+        width: 47%;}
+    .menu h1{
+        font-size: 18px;}
+    .menu  h2{
+        font-size: 16px;
+        padding: 0 20px;}
+    .menu .boxes{
+        padding: 0 20px;}
+}
+@media(max-width: 420px){
+    .menu .top, .menu .mid1, .menu .mid2, .menu .mid3{
+        width: 200px;
+        height: 200px;}
+    .menu .mid1, .menu .mid2, .menu .mid3{
+        position: absolute;
+        border-radius: 100%;
+        z-index: -1;
+    }
+    .menu .top{
+        left: -100px;}
+    .menu .mid1{
+        top: 420px;
+        left: -80px;
+    }
+    .menu .mid2{
+        top: 900px;
+        right: -80px;
+    }
+    .menu .mid3{
+        top: 1250px;
+        right: -80px;
+    }
+
+    .menu .container{
+        max-width: 330px;}
+    .menu .item{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 60px;}
+    .menu p{
+        font-size: 14px;}
+}
+
